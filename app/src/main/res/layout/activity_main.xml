@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="comsci.ped.myapplication1.MainActivity"
+    android:background="@drawable/wallpapers_a_06">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtTitle"
+        android:textSize="@dimen/h1"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/holo_green_light"
+        android:textStyle="normal|bold"
+        android:id="@+id/txtTitle" />
+
+    <Button
+        android:text="@string/MoreInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMorInfo"
+        android:layout_alignParentBottom="true" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnMorInfo"
+        android:layout_below="@+id/txtTitle"
+        android:id="@+id/livTraffic"
+        android:background="#aaffffff"
+        android:layout_margin="@dimen/my_margin" />
+
+</RelativeLayout>

@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
               shortStrings[i]=deitailStrings[i].substring(0,29) + ".....";
           }  //end for
 
+
         //create Listview
         MyAdapter myAdapter = new MyAdapter(MainActivity.this,ints,titelstrings,shortStrings);
         listView.setAdapter(myAdapter);
